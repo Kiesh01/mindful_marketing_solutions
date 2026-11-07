@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Mindful Marketing Solutions | Ethical East African Agency</title>
+  <meta name="description" content="Nairobi-based agency matching commercial growth budgets with audited NGO programmes across East Africa. Fully responsive on mobile, tablet, and desktop." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Standalone Pure CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip link for keyboard accessibility -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header Navigation -->
+  <header class="site-header" id="top">
+    <div class="container nav-wrapper">
+      <a href="#top" class="brand-logo" aria-label="Mindful Marketing Solutions Home">
+        <span class="logo-mark">M</span>
+        <span class="logo-text">Mindful <span>Marketing</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#approach">Our Approach</a>
+        <a href="#services">Services</a>
+        <a href="#governance">Governance</a>
+        <a href="#roadmap">Audit Roadmap</a>
+        <a href="#brief-builder" class="nav-cta">Build a Brief</a>
+      </nav>
+
+      <!-- Top Actions (Audience + Theme + Mobile Hamburger) -->
+      <div class="header-actions">
+        <!-- Lens Switcher -->
+        <div class="audience-toggle" role="group" aria-label="Audience View">
+          <button type="button" class="lens-btn active" data-lens="commercial">Commercial</button>
+          <button type="button" class="lens-btn" data-lens="ngo">NGO & Donor</button>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button type="button" id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme" title="Toggle Theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" id="mobile-menu-btn" class="icon-btn mobile-only" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer / Navigation Overlay -->
+  <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div class="brand-logo">
+          <span class="logo-mark">M</span>
+          <span class="logo-text">Mindful Marketing</span>
+        </div>
+        <button type="button" id="close-drawer-btn" class="icon-btn" aria-label="Close navigation">✕</button>
+      </div>
+
+      <div class="drawer-audience-picker">
+        <span class="picker-label">Perspective:</span>
+        <div class="audience-toggle full-width">
+          <button type="button" class="lens-btn active" data-lens="commercial">Commercial</button>
+          <button type="button" class="lens-btn" data-lens="ngo">NGO & Donor</button>
+        </div>
+      </div>
+
+      <nav class="drawer-nav">
+        <a href="#approach" class="drawer-link">Our Approach</a>
+        <a href="#services" class="drawer-link">Services & Placements</a>
+        <a href="#governance" class="drawer-link">Governance & KDPA 2019</a>
+        <a href="#roadmap" class="drawer-link">4-Stage Audit Roadmap</a>
+        <a href="#brief-builder" class="drawer-link highlight">Build a Pilot Brief</a>
+        <a href="#contact" class="drawer-link">Nairobi Desk</a>
+      </nav>
+
+      <div class="drawer-footer">
+        <div class="drawer-contact-info">
+          <p><strong>Nairobi Office:</strong> The Oval, Westlands</p>
+          <p><strong>Phone:</strong> +254 720 430 434</p>
+          <p><strong>Email:</strong> info@mindfulmarketing.co.ke</p>
+        </div>
+        <a href="https://wa.me/254720430434" target="_blank" rel="noreferrer" class="btn btn-whatsapp full-width">
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="badge-eyebrow">
+            <span class="pulse-dot"></span>
+            <span id="hero-eyebrow">Commercial Practice · East Africa</span>
+          </div>
+
+          <h1 id="hero-headline" class="hero-title">
+            Your growth budget should also build the region it sells to.
+          </h1>
+
+          <p id="hero-subline" class="hero-description">
+            We match FMCG, fintech, retail, and tech brands with audited NGO programmes across East Africa, then prove the commercial return on investment alongside verifiable community impact.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#brief-builder" class="btn btn-primary" id="hero-primary-cta">Explore Commercial Media</a>
+            <a href="#approach" class="btn btn-outline" id="hero-secondary-cta">Our Dual Model</a>
+            <a href="https://wa.me/254720430434" target="_blank" rel="noreferrer" class="hero-whatsapp-link">
+              <span class="wa-icon">💬</span> WhatsApp Nairobi Desk
+            </a>
+          </div>
+
+          <!-- Quick Lens Highlights -->
+          <div class="lens-focus-list" id="hero-focus-list">
+            <div class="focus-pill">
+              <strong>Verified spend:</strong> 100% audited placements
+            </div>
+            <div class="focus-pill">
+              <strong>Reach:</strong> 6 cities, 4 languages, 40+ stations
+            </div>
+            <div class="focus-pill">
+              <strong>Reporting:</strong> Quarterly ROI + impact proof
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="image-card">
+            <img id="hero-img" src="https://dala-prod-public-storage.s3.eu-west-1.amazonaws.com/generated-images/848a7346-c96a-4080-bf38-c9709b4f44f4/fmcg-shelf-retail-49d6ae4b-1793782637466.webp" alt="Retail team arranging FMCG products on an East African supermarket shelf" loading="eager" />
+            <div class="image-badge">
+              <span class="badge-tag">Evidence First</span>
+              <p class="badge-text" id="hero-badge-text">Audited field operations across Nairobi, Mombasa, Kampala, Kigali & Dar es Salaam</p>
+              <span class="badge-location">📍 The Oval, Westlands, Nairobi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Verified Statistics Strip -->
+      <div class="stats-strip">
+        <div class="container stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">4</span>
+            <span class="stat-label">East African countries with in-country native teams</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">34</span>
+            <span class="stat-label">Audited community and vernacular media partners</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Indigenous languages in verified media rotation</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">0</span>
+            <span class="stat-label">Greenwashed claims in eight years of operation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="section" id="approach">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Ethical Architecture</span>
+          <h2 class="section-title">One agency, two sets of books.</h2>
+          <p class="section-sub">Commercial growth budgets and development programmes usually operate in separate silos. We operate across both, holding strict accountability to both agendas simultaneously.</p>
+        </div>
+
+        <div class="usp-grid">
+          <div class="usp-card featured">
+            <div class="usp-icon">🤝</div>
+            <span class="usp-badge">Scoped in 3 weeks</span>
+            <h3>Strategic Matchmaking</h3>
+            <p>We align corporate CSR and ESG marketing budgets with NGOs whose grassroots field operations are already audited, compliant, and reporting-ready.</p>
+          </div>
+
+          <div class="usp-card">
+            <div class="usp-icon">📢</div>
+            <span class="usp-badge">Story + Hard Metrics</span>
+            <h3>Performance Storytelling</h3>
+            <p>Field impact transformed into commercially viable narratives: shelf-level proof, consumer trust, and verified social media and broadcast assets.</p>
+          </div>
+
+          <div class="usp-card">
+            <div class="usp-icon">📻</div>
+            <span class="usp-badge">40+ Partner Stations</span>
+            <h3>Vernacular Media Network</h3>
+            <p>Hyperlocal radio, mobile dispatch, and community hubs across Kenya, Uganda, Tanzania, and Rwanda, reviewed by native linguistic specialists.</p>
+          </div>
+
+          <div class="usp-card full-span">
+            <div class="usp-icon">🛡️</div>
+            <span class="usp-badge">Standard v4 Accord</span>
+            <h3>Ethical AI & Content Guardrails</h3>
+            <p>AI is restricted strictly to draft translations and data structuring. Every quote, visual, and claim is human-vetted with a strict zero-tolerance ban on synthetic community faces or generated quotes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section bg-subtle" id="services">
+      <div class="container">
+        <div class="services-header-flex">
+          <div>
+            <span class="section-tag">Targeted Capabilities</span>
+            <h2 class="section-title">Services, mapped to the outcome you are judged on.</h2>
+          </div>
+          <div class="service-tabs" role="tablist">
+            <button type="button" class="service-tab-btn active" data-track="commercial">Commercial Brands</button>
+            <button type="button" class="service-tab-btn" data-track="ngo">NGOs & Donors</button>
+          </div>
+        </div>
+
+        <!-- Dynamic Service Track Cards -->
+        <div class="services-wrapper" id="services-container">
+          <!-- Populated dynamically by app.js based on selected track -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Governance & Compliance Framework -->
+    <section class="section" id="governance">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Regulatory Rigour</span>
+          <h2 class="section-title">Compliance frameworks you can bring to legal.</h2>
+          <p class="section-sub">We don't do vague promises. Every partnership is grounded in certified legal and ethical frameworks that stand up to regulatory and institutional donor review.</p>
+        </div>
+
+        <div class="framework-grid">
+          <div class="framework-card">
+            <div class="card-status-badge">Fully Mapped</div>
+            <h3>Kenya Data Protection Act 2019</h3>
+            <p class="framework-ref">KDPA 2019 / ODPC Compliant</p>
+            <p class="framework-body">Every field deployment begins with a data impact assessment: what data is collected, why, who safeguards it, and the scheduled deletion date.</p>
+            <ul class="framework-points">
+              <li>Lawful basis recorded per data category</li>
+              <li>Consent taken in participant's native tongue</li>
+              <li>Encrypted storage and retention schedules</li>
+            </ul>
+            <button type="button" class="policy-open-btn" data-policy="kdpa">Read Data Protection Policy →</button>
+          </div>
+
+          <div class="framework-card">
+            <div class="card-status-badge">100% Human Reviewed</div>
+            <h3>Ethical AI Accord (v4)</h3>
+            <p class="framework-ref">Internal Standard v4</p>
+            <p class="framework-body">AI accelerates transcription, data synthesis, and translation drafting. It never replaces the human reviewer who signs off on claims or quotes.</p>
+            <ul class="framework-points">
+              <li>Named native speaker reviewer on every asset</li>
+              <li>Archived model logs for verification</li>
+              <li>Strict ban on synthetic community faces</li>
+            </ul>
+            <button type="button" class="policy-open-btn" data-policy="ai-ethics">Read AI Ethics Accord →</button>
+          </div>
+
+          <div class="framework-card">
+            <div class="card-status-badge">Quarterly Audited</div>
+            <h3>SDG Alignment Register</h3>
+            <p class="framework-ref">UN SDGs 3, 5, 8, 12, 13</p>
+            <p class="framework-body">Each programme is mapped to tangible sustainable development goals it measurably advances, with agreed pre-launch indicator baselines.</p>
+            <ul class="framework-points">
+              <li>Pre-agreed indicator baselines</li>
+              <li>Disaggregated reporting (gender & county)</li>
+              <li>Public transparent impact summary</li>
+            </ul>
+            <button type="button" class="policy-open-btn" data-policy="cross-sector">Read Code of Ethics →</button>
+          </div>
+
+          <div class="framework-card">
+            <div class="card-status-badge">Contractually Binding</div>
+            <h3>Cross-Sector Code of Ethics</h3>
+            <p class="framework-ref">Bilateral Standard</p>
+            <p class="framework-body">Commercial partners and NGO partners sign the identical code: zero unverified claims, zero unpaid community labour, and non-negotiable NGO independence.</p>
+            <ul class="framework-points">
+              <li>Claim substantiation dossier mandatory</li>
+              <li>Community time budgeted as formal line items</li>
+              <li>NGO editorial independence guaranteed</li>
+            </ul>
+            <button type="button" class="policy-open-btn" data-policy="privacy">Read Privacy Policy →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4-Stage Operational Roadmap -->
+    <section class="section bg-subtle" id="roadmap">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Audit Protocol</span>
+          <h2 class="section-title">A four-stage protocol you can audit.</h2>
+          <p class="section-sub">Instead of a hollow logo wall, here is the verifiable operational roadmap every pilot navigates, detailing the exact governance artifacts produced at each milestone.</p>
+        </div>
+
+        <div class="roadmap-timeline">
+          <div class="timeline-step">
+            <div class="step-marker">01</div>
+            <div class="step-content">
+              <span class="step-duration">Weeks 1 – 3</span>
+              <h3>Discovery & Compliance Review</h3>
+              <p>We sit with your legal, brand, ESG, and programme leads. Data maps, consent architecture, and claim substantiation dossiers are established before any media is booked.</p>
+              <div class="step-outputs">
+                <span class="output-tag">✓ Data map & lawful basis</span>
+                <span class="output-tag">✓ Claim substantiation file</span>
+                <span class="output-tag">✓ Partner shortlist</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-marker">02</div>
+            <div class="step-content">
+              <span class="step-duration">Weeks 3 – 5</span>
+              <h3>Strategic Matchmaking & Scoping</h3>
+              <p>Commercial marketing budgets meet audited NGO field operations. Both parties sign the Code of Ethics and align on joint KPI indicators and exit criteria.</p>
+              <div class="step-outputs">
+                <span class="output-tag">✓ Bilateral agreement</span>
+                <span class="output-tag">✓ Indicator baseline</span>
+                <span class="output-tag">✓ Transparent budget split</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-marker">03</div>
+            <div class="step-content">
+              <span class="step-duration">Weeks 5 – 12</span>
+              <h3>Vernacular Media & Field Deployment</h3>
+              <p>Community radio, grassroots activations, and digital creative launch across target counties, translated and reviewed by native linguistic specialists.</p>
+              <div class="step-outputs">
+                <span class="output-tag">✓ Multi-station media buy</span>
+                <span class="output-tag">✓ Linguistic sign-off logs</span>
+                <span class="output-tag">✓ Weekly verified reach data</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-marker">04</div>
+            <div class="step-content">
+              <span class="step-duration">Post-Campaign & Ongoing</span>
+              <h3>Dual Verifiable Impact Reporting</h3>
+              <p>One unified intelligence report satisfying both agendas: commercial return on advertising spend (ROAS) and institutional donor-ready compliance evidence.</p>
+              <div class="step-outputs">
+                <span class="output-tag">✓ Commercial ROI report</span>
+                <span class="output-tag">✓ Donor compliance dossier</span>
+                <span class="output-tag">✓ Public impact summary</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Pilot Brief Builder -->
+    <section class="section" id="brief-builder">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Scoping Tool</span>
+          <h2 class="section-title">Configure your East African pilot brief.</h2>
+          <p class="section-sub">Select your parameters below to generate a tailored pilot scope, estimated timeline, and instant dispatch directly to our Nairobi strategy desk.</p>
+        </div>
+
+        <div class="brief-builder-grid">
+          <!-- Form Inputs -->
+          <div class="builder-controls">
+            <form id="pilot-brief-form" onsubmit="event.preventDefault();">
+              <!-- Perspective -->
+              <div class="form-group">
+                <label class="form-label">Sector Perspective</label>
+                <div class="radio-pill-group">
+                  <label class="pill-radio">
+                    <input type="radio" name="form-audience" value="commercial" checked />
+                    <span>Commercial Brand</span>
+                  </label>
+                  <label class="pill-radio">
+                    <input type="radio" name="form-audience" value="ngo" />
+                    <span>NGO / Donor Implementer</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Organisation & Name -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Your Name</label>
+                  <input type="text" id="form-name" class="form-input" placeholder="e.g. Amani Mwangi" required />
+                </div>
+                <div class="form-group">
+                  <label for="form-org" class="form-label">Organisation / Brand</label>
+                  <input type="text" id="form-org" class="form-input" placeholder="e.g. East Africa FMCG Ltd" required />
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="form-email" class="form-label">Work Email</label>
+                <input type="email" id="form-email" class="form-input" placeholder="name@company.com" required />
+              </div>
+
+              <!-- Primary Objective -->
+              <div class="form-group">
+                <label for="form-objective" class="form-label">Core Objective</label>
+                <select id="form-objective" class="form-select">
+                  <option value="CSR / ESG brand activation">CSR / ESG brand activation</option>
+                  <option value="Behaviour change campaign">Behaviour change campaign</option>
+                  <option value="Donor-compliant field storytelling">Donor-compliant field storytelling</option>
+                  <option value="Vernacular media buying">Vernacular media buying</option>
+                  <option value="Market entry research">Market entry research</option>
+                  <option value="Always-on governance retainer">Always-on governance retainer</option>
+                </select>
+              </div>
+
+              <!-- Target Markets -->
+              <div class="form-group">
+                <label class="form-label">Target Markets (Select all that apply)</label>
+                <div class="checkbox-pill-group">
+                  <label class="pill-checkbox">
+                    <input type="checkbox" name="regions" value="Kenya" checked />
+                    <span>Kenya</span>
+                  </label>
+                  <label class="pill-checkbox">
+                    <input type="checkbox" name="regions" value="Tanzania" />
+                    <span>Tanzania</span>
+                  </label>
+                  <label class="pill-checkbox">
+                    <input type="checkbox" name="regions" value="Uganda" />
+                    <span>Uganda</span>
+                  </label>
+                  <label class="pill-checkbox">
+                    <input type="checkbox" name="regions" value="Rwanda" />
+                    <span>Rwanda</span>
+                  </label>
+                  <label class="pill-checkbox">
+                    <input type="checkbox" name="regions" value="Pan-East Africa" />
+                    <span>Pan-East Africa</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Budget & Timeline -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-budget" class="form-label">Budget Range</label>
+                  <select id="form-budget" class="form-select">
+                    <option value="USD $10k - $25k (Pilot / Feasibility)">USD $10k - $25k (Pilot / Feasibility)</option>
+                    <option value="USD $25k - $75k (Market Rollout)">USD $25k - $75k (Market Rollout)</option>
+                    <option value="USD $75k - $150k+ (Pan-East Africa)">USD $75k - $150k+ (Pan-East Africa)</option>
+                    <option value="Retainer / Custom Scoping">Retainer / Custom Scoping</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="form-timeline" class="form-label">Desired Timeline</label>
+                  <select id="form-timeline" class="form-select">
+                    <option value="Next 30 days">Next 30 days</option>
+                    <option value="This quarter">This quarter</option>
+                    <option value="Next 6 months">Next 6 months</option>
+                    <option value="Planning for next FY">Planning for next FY</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Additional Notes -->
+              <div class="form-group">
+                <label for="form-message" class="form-label">Brief Notes or Specific Focus</label>
+                <textarea id="form-message" class="form-textarea" rows="3" placeholder="Tell us about your target communities, languages, or compliance requirements..."></textarea>
+              </div>
+            </form>
+          </div>
+
+          <!-- Dynamic Real-Time Summary Output -->
+          <div class="builder-preview">
+            <div class="preview-card">
+              <div class="preview-header">
+                <span class="preview-badge">Live Scope Preview</span>
+                <span class="preview-id" id="brief-ref">REF: MMS-2025-01</span>
+              </div>
+
+              <div class="preview-body" id="brief-summary-box">
+                <h4 id="preview-org">Your Organisation</h4>
+                <p class="preview-lead" id="preview-objective">CSR / ESG Brand Activation</p>
+
+                <div class="preview-specs">
+                  <div class="spec-row">
+                    <span class="spec-label">Audience:</span>
+                    <span class="spec-val" id="preview-audience">Commercial Brand</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Target Markets:</span>
+                    <span class="spec-val" id="preview-regions">Kenya</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Timeline:</span>
+                    <span class="spec-val" id="preview-timeline">Next 30 days</span>
+                  </div>
+                  <div class="spec-row">
+                    <span class="spec-label">Budget Tier:</span>
+                    <span class="spec-val" id="preview-budget">USD $10k - $25k (Pilot)</span>
+                  </div>
+                </div>
+
+                <div class="preview-compliance-stamp">
+                  <span class="stamp-icon">🛡️</span>
+                  <span>Includes KDPA 2019 data impact map, vernacular creative clearance & audit reporting dossier.</span>
+                </div>
+              </div>
+
+              <!-- Dispatch Buttons -->
+              <div class="preview-actions">
+                <button type="button" id="send-whatsapp-btn" class="btn btn-whatsapp full-width">
+                  <span>💬 Send Brief via WhatsApp</span>
+                </button>
+                <div class="sub-actions">
+                  <button type="button" id="send-email-btn" class="btn btn-outline flex-1">
+                    <span>✉️ Send via Email</span>
+                  </button>
+                  <button type="button" id="copy-brief-btn" class="btn btn-subtle flex-1">
+                    <span>📋 Copy Brief</span>
+                  </button>
+                </div>
+              </div>
+
+              <p class="preview-privacy-note">
+                🔒 Data remains in your browser until explicitly dispatched. No trackers or third-party pixels.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="section bg-subtle" id="faqs">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Common Inquiries</span>
+          <h2 class="section-title">Frequently asked questions.</h2>
+        </div>
+
+        <div class="faqs-grid">
+          <div class="faq-card">
+            <h4>How do you prevent conflict of interest between commercial and NGO partners?</h4>
+            <p>We maintain two strictly segregated balance sheets and a legally binding Cross-Sector Code of Ethics. Commercial brands get real market penetration and verified ESG outcomes; NGOs receive dedicated private-sector financing without sacrificing editorial or operational autonomy.</p>
+          </div>
+          <div class="faq-card">
+            <h4>Is this code 100% vanilla HTML, CSS, and JS?</h4>
+            <p>Yes. This entire directory contains zero npm/build dependencies. You can double-click <code>index.html</code> in any browser or drop it directly into any cPanel, GitHub Pages, Netlify, or Apache/Nginx web server.</p>
+          </div>
+          <div class="faq-card">
+            <h4>How is mobile responsiveness ensured?</h4>
+            <p>Our pure CSS utilizes fluid CSS clamp typography, CSS flexbox and grid layouts, touch targets adhering to the minimum 44px standard, touch-friendly drawers, and dedicated media queries spanning 320px to 4K displays.</p>
+          </div>
+          <div class="faq-card">
+            <h4>What East African languages are supported?</h4>
+            <p>Our core language pool spans Swahili (Tanzanian & Kenyan), Nairobi Sheng, Kikuyu, Dholuo, Kalenjin, Luhya, Kamba, Luganda, Runyankole, and Kinyarwanda, with in-country native speaker sign-offs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Nairobi Headquarters -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-info">
+            <span class="section-tag">Nairobi Headquarters</span>
+            <h2>Let's align your next East African campaign.</h2>
+            <p class="contact-sub">Visit our offices in Westlands or speak directly with our senior strategy leads.</p>
+
+            <div class="contact-details-list">
+              <div class="detail-item">
+                <span class="detail-icon">📍</span>
+                <div>
+                  <strong>Address</strong>
+                  <p>The Oval, 3rd Floor, Ring Road Parklands, Westlands, Nairobi, Kenya</p>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon">📞</span>
+                <div>
+                  <strong>Direct Desk</strong>
+                  <p><a href="tel:+254720430434">+254 720 430 434</a></p>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon">✉️</span>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:info@mindfulmarketing.co.ke">info@mindfulmarketing.co.ke</a></p>
+                </div>
+              </div>
+              <div class="detail-item">
+                <span class="detail-icon">🕒</span>
+                <div>
+                  <strong>Hours</strong>
+                  <p>Monday to Friday, 08:30 to 17:30 EAT</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-badge-card">
+            <div class="regional-map-card">
+              <span class="map-badge">Regional Coverage</span>
+              <h3>Active In-Country Desks</h3>
+              <ul class="country-list">
+                <li><span class="flag">🇰🇪</span> Kenya (Nairobi HQ & Regional Hubs)</li>
+                <li><span class="flag">🇹🇿</span> Tanzania (Dar es Salaam & Arusha)</li>
+                <li><span class="flag">🇺🇬</span> Uganda (Kampala & Gulu)</li>
+                <li><span class="flag">🇷🇼</span> Rwanda (Kigali)</li>
+              </ul>
+              <a href="https://wa.me/254720430434" target="_blank" rel="noreferrer" class="btn btn-whatsapp full-width">
+                <span>Start Direct Discussion</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <span class="logo-mark">M</span>
+          <span class="logo-text">Mindful Marketing Solutions</span>
+        </div>
+        <p class="footer-desc">
+          A Nairobi-based ethical agency matching commercial growth budgets with audited NGO programmes across East Africa, proving both sides of the story.
+        </p>
+        <p class="footer-address">
+          📍 The Oval, Westlands, Nairobi, Kenya
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#approach">Our Approach</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#governance">Governance & KDPA</a></li>
+          <li><a href="#roadmap">Audit Roadmap</a></li>
+          <li><a href="#brief-builder">Pilot Brief Builder</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Compliance & Policies</h4>
+        <ul>
+          <li><button type="button" class="policy-open-btn footer-btn" data-policy="kdpa">KDPA 2019 Data Protection</button></li>
+          <li><button type="button" class="policy-open-btn footer-btn" data-policy="ai-ethics">Ethical AI Accord v4</button></li>
+          <li><button type="button" class="policy-open-btn footer-btn" data-policy="cross-sector">Cross-Sector Code of Ethics</button></li>
+          <li><button type="button" class="policy-open-btn footer-btn" data-policy="privacy">Website Privacy Policy</button></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <div class="footer-buttons">
+          <a href="mailto:info@mindfulmarketing.co.ke" class="btn btn-outline full-width">
+            <span>✉️ Email Us</span>
+          </a>
+          <a href="https://wa.me/254720430434" target="_blank" rel="noreferrer" class="btn btn-whatsapp full-width">
+            <span>💬 WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>© 2025 Mindful Marketing Solutions. Registered in Kenya. All rights reserved.</p>
+        <p>Built with pure HTML5, CSS3 & JavaScript · Fully responsive</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed Mobile Quick Action Bar (Only shows on mobile < 768px) -->
+  <div class="mobile-bottom-bar" id="mobile-bottom-bar">
+    <a href="https://wa.me/254720430434" target="_blank" rel="noreferrer" class="bar-btn bar-wa">
+      <span>💬 WhatsApp</span>
+    </a>
+    <a href="tel:+254720430434" class="bar-btn bar-call">
+      <span>📞 Call</span>
+    </a>
+    <a href="#brief-builder" class="bar-btn bar-cta">
+      <span>🚀 Book Pilot</span>
+    </a>
+  </div>
+
+  <!-- Accessible Policy Dialog Modal -->
+  <dialog id="policy-modal" class="policy-dialog" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <h3 id="modal-title" class="modal-title">Policy Title</h3>
+          <span id="modal-updated" class="modal-updated">Updated Date</span>
+        </div>
+        <button type="button" id="close-modal-btn" class="icon-btn" aria-label="Close dialog">✕</button>
+      </div>
+      <div id="modal-content" class="modal-body">
+        <!-- Injected dynamically -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="modal-dismiss-btn" class="btn btn-primary">Understood</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Standalone JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
